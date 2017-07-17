@@ -14,7 +14,7 @@ local lgi = require ('lgi')
 local notify = lgi.require('Notify')
 notify.init ("Telegram updates")
 chats = {}
-helper_id = 418516842 --Put Your Helper Bot ID Here
+helper_id = 387388679 --Put Your Helper Bot ID Here
 
 function do_notify (user, msg)
 	local n = notify.Notification.new(user, msg)
@@ -92,27 +92,12 @@ function create_config( )
     "Tools",
     "Write"
 	},
-    sudo_users = {377450049,418516842,284298227},
+    sudo_users = {247134702,334984718,366848429,387388679},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
     info_text = [[
-	》MaTaDoR BoT v5.7
-An advanced administration bot based on https://valtman.name/telegram-cli
-
-》https://github.com/BeyondTeam/BDReborn 
-
-》Admins :
-》@MahDiRoO ➣ Founder & Developer《
-》@JavadSudo ➣ Developer《
-》@Shaniloop ➣ Developer《
-
-》Special thanks to :
-》MaTaDoRTeaM
-》@Xamarin_Devloper
-
-》Our channel :
-》@MaTaDoRTeam《
+	
 ]],
   }
 	serialize_to_file(config, './data/config.lua')
