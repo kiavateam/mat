@@ -1,8 +1,8 @@
 package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
-bot_token = "418516842:AAHlHyfOpUKIikXWO-ai5JXwMC08CiSv7Kw" --Put You Token Here
+bot_token = "387388679:AAGAP7deYnTsHQZI-ZMop3aKS740fACdxq8" --Put You Token Here
 send_api = "https://api.telegram.org/bot"..bot_token
-sudo_id = 377450049
+sudo_id = 247134702
 require('./bot/methods')
 require('./bot/utils')
 require('./libs/JSON')
@@ -162,25 +162,12 @@ function create_config( )
     "core",
     "plugins"
     },
-    sudo_users = {377450049,00000000},--Sudo users
+    sudo_users = {271713872,247134702,334984718,366848429},--Sudo users
     admins = {},
     disabled_channels = {},
     moderation = {data = ''..MaTaDoRTeaM..'/data/moderation.json'},
     info_text = [[
-*》MaTaDoR Helper Bot V1*
-	
-》[MaTaDoR Helper](https://github.com/MaTaDoRTeam/MaTaDoR)
 
-*》Admins :*
-*》Founder & Developer :* [MahDiRoO](Telegram.Me/mahdiroo)
-_》Developer :_ [JaVaD](Telegram.Me/javadsudo)
-_》Developer & Sponser :_ [MAKAN](Telegram.Me/shaniloop)
-
-*》Special thanks to :*
-》[Xamarin](Telegram.Me/xamarin_developer)
-
-*》Our channel :*
-》[MaTaDoRTeaM](Telegram.Me/matadorTeam)
 ]],
   }
   serialize_to_file(config, './data/config.lua')
